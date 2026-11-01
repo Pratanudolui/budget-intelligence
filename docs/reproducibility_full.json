@@ -1,0 +1,127 @@
+{
+  "seed" : 20261022,
+  "scale" : "full",
+  "identical" : true,
+  "run1" : [ {
+    "path" : "input/accounts.csv",
+    "rows" : 2346,
+    "sha256" : "3db182a2a5acf2c2d437796f47a8aceea6b051f9676cf347d0aa844e3b74dd8f"
+  }, {
+    "path" : "input/budgets.csv",
+    "rows" : 111124,
+    "sha256" : "00de790b0d15a4850e9f5fb92517e899256460a92c5da3326fa28a0b66c11bee"
+  }, {
+    "path" : "input/categories.csv",
+    "rows" : 31,
+    "sha256" : "93a6a6dd3b74ace942f74928004490996ca9e77f0aed9080e1e2598178ed61f5"
+  }, {
+    "path" : "input/category_aliases.csv",
+    "rows" : 10,
+    "sha256" : "a61353a4d97ffb65098e717bb42f7124d9737e29cb901d2b1ddea271fa683e9c"
+  }, {
+    "path" : "input/category_rules.csv",
+    "rows" : 137,
+    "sha256" : "1e32b4001d95b21cfa49296d9c84f58a9becaf03f4005bc28589cd50b939c576"
+  }, {
+    "path" : "input/merchant_categories.csv",
+    "rows" : 103,
+    "sha256" : "dbf75633f47385b1524216485fc3691957d8424759c65b51f3af17e44650d667"
+  }, {
+    "path" : "input/merchants.csv",
+    "rows" : 94,
+    "sha256" : "b7aea56c8c3cc8b27634c268dffa63d1a301dc4a114e95641e879ae85d420399"
+  }, {
+    "path" : "input/taxonomy.json",
+    "rows" : null,
+    "sha256" : "affcb99d2c27d5e98d5571b3bafaa0a0a2a51a07bc9df10fcfb563e2a52e1839"
+  }, {
+    "path" : "input/transactions.csv",
+    "rows" : 500000,
+    "sha256" : "ae82e0aaddad2522d9353d7a366baff7698549d0985d4c934fb3cbc9cb6c1629"
+  }, {
+    "path" : "input/user_profiles.csv",
+    "rows" : 1000,
+    "sha256" : "8e6b25aaf56e22a3d05bfc92cc32511124e84ef8f7f7ff4f2b2f9682ebf88f56"
+  }, {
+    "path" : "ground_truth/budget_labels.csv",
+    "rows" : 111124,
+    "sha256" : "8f1ff2e8c75f57d8e36b95f516affd523128451b7c2528feeb12256eb6eaa384"
+  }, {
+    "path" : "ground_truth/insights.csv",
+    "rows" : 64311,
+    "sha256" : "8b72dc1d7781a0c2bbfda8e88364fa99874c43f4c14e7c9c51f7d6b7438fba89"
+  }, {
+    "path" : "ground_truth/monthly_actuals.csv",
+    "rows" : 144943,
+    "sha256" : "a0d21f74b19eb254a1e432bb225c58e344bd2f9c5202119006cae9089376d967"
+  }, {
+    "path" : "ground_truth/recurring_series.csv",
+    "rows" : 9065,
+    "sha256" : "563205ea13adf3cf942254e77aabc043b10db30ab4dfdd37cce01a6a1d00dce2"
+  }, {
+    "path" : "ground_truth/transaction_labels.csv",
+    "rows" : 500000,
+    "sha256" : "e7c81b82d30cfc8ee4b541868cb5ac42333c615fabbe0d7d7c2abba720a32196"
+  } ],
+  "run2" : [ {
+    "path" : "input/accounts.csv",
+    "rows" : 2346,
+    "sha256" : "3db182a2a5acf2c2d437796f47a8aceea6b051f9676cf347d0aa844e3b74dd8f"
+  }, {
+    "path" : "input/budgets.csv",
+    "rows" : 111124,
+    "sha256" : "00de790b0d15a4850e9f5fb92517e899256460a92c5da3326fa28a0b66c11bee"
+  }, {
+    "path" : "input/categories.csv",
+    "rows" : 31,
+    "sha256" : "93a6a6dd3b74ace942f74928004490996ca9e77f0aed9080e1e2598178ed61f5"
+  }, {
+    "path" : "input/category_aliases.csv",
+    "rows" : 10,
+    "sha256" : "a61353a4d97ffb65098e717bb42f7124d9737e29cb901d2b1ddea271fa683e9c"
+  }, {
+    "path" : "input/category_rules.csv",
+    "rows" : 137,
+    "sha256" : "1e32b4001d95b21cfa49296d9c84f58a9becaf03f4005bc28589cd50b939c576"
+  }, {
+    "path" : "input/merchant_categories.csv",
+    "rows" : 103,
+    "sha256" : "dbf75633f47385b1524216485fc3691957d8424759c65b51f3af17e44650d667"
+  }, {
+    "path" : "input/merchants.csv",
+    "rows" : 94,
+    "sha256" : "b7aea56c8c3cc8b27634c268dffa63d1a301dc4a114e95641e879ae85d420399"
+  }, {
+    "path" : "input/taxonomy.json",
+    "rows" : null,
+    "sha256" : "affcb99d2c27d5e98d5571b3bafaa0a0a2a51a07bc9df10fcfb563e2a52e1839"
+  }, {
+    "path" : "input/transactions.csv",
+    "rows" : 500000,
+    "sha256" : "ae82e0aaddad2522d9353d7a366baff7698549d0985d4c934fb3cbc9cb6c1629"
+  }, {
+    "path" : "input/user_profiles.csv",
+    "rows" : 1000,
+    "sha256" : "8e6b25aaf56e22a3d05bfc92cc32511124e84ef8f7f7ff4f2b2f9682ebf88f56"
+  }, {
+    "path" : "ground_truth/budget_labels.csv",
+    "rows" : 111124,
+    "sha256" : "8f1ff2e8c75f57d8e36b95f516affd523128451b7c2528feeb12256eb6eaa384"
+  }, {
+    "path" : "ground_truth/insights.csv",
+    "rows" : 64311,
+    "sha256" : "8b72dc1d7781a0c2bbfda8e88364fa99874c43f4c14e7c9c51f7d6b7438fba89"
+  }, {
+    "path" : "ground_truth/monthly_actuals.csv",
+    "rows" : 144943,
+    "sha256" : "a0d21f74b19eb254a1e432bb225c58e344bd2f9c5202119006cae9089376d967"
+  }, {
+    "path" : "ground_truth/recurring_series.csv",
+    "rows" : 9065,
+    "sha256" : "563205ea13adf3cf942254e77aabc043b10db30ab4dfdd37cce01a6a1d00dce2"
+  }, {
+    "path" : "ground_truth/transaction_labels.csv",
+    "rows" : 500000,
+    "sha256" : "e7c81b82d30cfc8ee4b541868cb5ac42333c615fabbe0d7d7c2abba720a32196"
+  } ]
+}

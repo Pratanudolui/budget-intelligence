@@ -1,0 +1,44 @@
+Generating scale=full seed=20261022 users=1000 transactions=500000 -> /var/folders/y1/x2nvzb5x10g__zyhvqgp7vdm0000gp/T/repro-8076261198126762435/run1
+Done in 2.2s
+Generating scale=full seed=20261022 users=1000 transactions=500000 -> /var/folders/y1/x2nvzb5x10g__zyhvqgp7vdm0000gp/T/repro-8076261198126762435/run2
+Done in 1.8s
+
+REPRODUCIBILITY CHECK (seed=20261022, scale=full)
+  input/accounts.csv                   rows=2346     run1=3db182a2a5acf2c2 run2=3db182a2a5acf2c2 MATCH
+  input/budgets.csv                    rows=111124   run1=00de790b0d15a485 run2=00de790b0d15a485 MATCH
+  input/categories.csv                 rows=31       run1=93a6a6dd3b74ace9 run2=93a6a6dd3b74ace9 MATCH
+  input/category_aliases.csv           rows=10       run1=a61353a4d97ffb65 run2=a61353a4d97ffb65 MATCH
+  input/category_rules.csv             rows=137      run1=1e32b4001d95b21c run2=1e32b4001d95b21c MATCH
+  input/merchant_categories.csv        rows=103      run1=dbf75633f47385b1 run2=dbf75633f47385b1 MATCH
+  input/merchants.csv                  rows=94       run1=b7aea56c8c3cc8b2 run2=b7aea56c8c3cc8b2 MATCH
+  input/taxonomy.json                  rows=null     run1=affcb99d2c27d5e9 run2=affcb99d2c27d5e9 MATCH
+  input/transactions.csv               rows=500000   run1=ae82e0aaddad2522 run2=ae82e0aaddad2522 MATCH
+  input/user_profiles.csv              rows=1000     run1=8e6b25aaf56e22a3 run2=8e6b25aaf56e22a3 MATCH
+  ground_truth/budget_labels.csv       rows=111124   run1=8f1ff2e8c75f57d8 run2=8f1ff2e8c75f57d8 MATCH
+  ground_truth/insights.csv            rows=64311    run1=8b72dc1d7781a0c2 run2=8b72dc1d7781a0c2 MATCH
+  ground_truth/monthly_actuals.csv     rows=144943   run1=a0d21f74b19eb254 run2=a0d21f74b19eb254 MATCH
+  ground_truth/recurring_series.csv    rows=9065     run1=563205ea13adf3cf run2=563205ea13adf3cf MATCH
+  ground_truth/transaction_labels.csv  rows=500000   run1=e7c81b82d30cfc8e run2=e7c81b82d30cfc8e MATCH
+  => IDENTICAL row counts and checksums
+Generating scale=starter seed=20261022 users=100 transactions=50000 -> /var/folders/y1/x2nvzb5x10g__zyhvqgp7vdm0000gp/T/repro-4700828679297612593/run1
+Done in 0.4s
+Generating scale=starter seed=20261022 users=100 transactions=50000 -> /var/folders/y1/x2nvzb5x10g__zyhvqgp7vdm0000gp/T/repro-4700828679297612593/run2
+Done in 0.2s
+
+REPRODUCIBILITY CHECK (seed=20261022, scale=starter)
+  input/accounts.csv                   rows=236      run1=131cb720cfc3e430 run2=131cb720cfc3e430 MATCH
+  input/budgets.csv                    rows=11023    run1=313849cdb8da5cda run2=313849cdb8da5cda MATCH
+  input/categories.csv                 rows=31       run1=93a6a6dd3b74ace9 run2=93a6a6dd3b74ace9 MATCH
+  input/category_aliases.csv           rows=10       run1=a61353a4d97ffb65 run2=a61353a4d97ffb65 MATCH
+  input/category_rules.csv             rows=137      run1=1e32b4001d95b21c run2=1e32b4001d95b21c MATCH
+  input/merchant_categories.csv        rows=103      run1=dbf75633f47385b1 run2=dbf75633f47385b1 MATCH
+  input/merchants.csv                  rows=94       run1=b7aea56c8c3cc8b2 run2=b7aea56c8c3cc8b2 MATCH
+  input/taxonomy.json                  rows=null     run1=16285226ae2c2903 run2=16285226ae2c2903 MATCH
+  input/transactions.csv               rows=50000    run1=745df0cf78338682 run2=745df0cf78338682 MATCH
+  input/user_profiles.csv              rows=100      run1=8aa617cfae52e8eb run2=8aa617cfae52e8eb MATCH
+  ground_truth/budget_labels.csv       rows=11023    run1=1845964676cd6fc6 run2=1845964676cd6fc6 MATCH
+  ground_truth/insights.csv            rows=6410     run1=5f05b8be060624e3 run2=5f05b8be060624e3 MATCH
+  ground_truth/monthly_actuals.csv     rows=14486    run1=2450b7f44f801db9 run2=2450b7f44f801db9 MATCH
+  ground_truth/recurring_series.csv    rows=916      run1=8e170efe6ecffe31 run2=8e170efe6ecffe31 MATCH
+  ground_truth/transaction_labels.csv  rows=50000    run1=4bd7d68660679c5b run2=4bd7d68660679c5b MATCH
+  => IDENTICAL row counts and checksums
