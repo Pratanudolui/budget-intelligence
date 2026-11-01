@@ -1,0 +1,7 @@
+# Keep generated data byte-identical across platforms so manifest checksums stay valid.
+data/** -text
+*.java text eol=lf
+*.sql text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf

@@ -1,0 +1,11 @@
+target/
+*.class
+*.log
+.idea/
+*.iml
+.vscode/
+.DS_Store
+# Full-scale raw CSVs are large (~110 MB); they are shipped as data/full_dataset.zip and can be regenerated
+# byte-for-byte with: java -jar target/budget-intelligence.jar generate --scale full
+data/full/input/*.csv
+data/full/ground_truth/*.csv
