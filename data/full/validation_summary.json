@@ -1,0 +1,379 @@
+{
+  "dataset" : "data/full",
+  "checks_total" : 62,
+  "checks_failed" : 0,
+  "checks" : [
+    {
+      "name" : "pk.user_profile",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "1000 rows"
+    },
+    {
+      "name" : "pk.account",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "pk.merchant",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "94 rows"
+    },
+    {
+      "name" : "pk.category",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "31 rows"
+    },
+    {
+      "name" : "pk.category_rule",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "137 rows"
+    },
+    {
+      "name" : "pk.transaction",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "pk.budget",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "111124 rows"
+    },
+    {
+      "name" : "pk.merchant_category",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "103 rows"
+    },
+    {
+      "name" : "pk.gt.transaction_label",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "pk.gt.recurring_series",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "9065 rows"
+    },
+    {
+      "name" : "id.user_format",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "1000 rows"
+    },
+    {
+      "name" : "id.account_format_matches_owner",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "id.transaction_format",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "id.merchant_format",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "94 rows"
+    },
+    {
+      "name" : "id.budget_format_matches_fields",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "111124 rows"
+    },
+    {
+      "name" : "id.recurring_series_format",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "9065 rows"
+    },
+    {
+      "name" : "fk.account.user_id",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "fk.transaction.account_id",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "fk.transaction.merchant_id(optional)",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "fk.merchant.default_category(optional)",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "94 rows"
+    },
+    {
+      "name" : "fk.merchant_category",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "103 rows"
+    },
+    {
+      "name" : "fk.category.parent(optional)",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "31 rows"
+    },
+    {
+      "name" : "fk.category_alias.category",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "10 rows"
+    },
+    {
+      "name" : "fk.category_rule.category",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "137 rows"
+    },
+    {
+      "name" : "fk.category_rule.merchant(optional)",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "137 rows"
+    },
+    {
+      "name" : "fk.budget.user_id",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "111124 rows"
+    },
+    {
+      "name" : "fk.gt.label.transaction_id",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "fk.gt.label.true_category",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "fk.gt.label.refund_of(optional)",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "fk.gt.label.recurring_series(optional)",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "fk.gt.series.account_merchant",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "9065 rows"
+    },
+    {
+      "name" : "fk.gt.every_transaction_labelled",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 labels for 500000 transactions"
+    },
+    {
+      "name" : "enum.account_type",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "enum.account_status",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "enum.txn_type",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "enum.currency",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "enum.category_kind",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "31 rows"
+    },
+    {
+      "name" : "enum.income_band",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "1000 rows"
+    },
+    {
+      "name" : "enum.rule_match_type",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "137 rows"
+    },
+    {
+      "name" : "enum.timezone_valid",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "1000 rows"
+    },
+    {
+      "name" : "enum.gt.issue_type",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "value.budget_amount_positive",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "111124 rows"
+    },
+    {
+      "name" : "value.transaction_amount_nonzero",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "date.account_opened_after_user_created",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "date.transaction_after_account_opened",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "lifecycle.closed_accounts_have_close_date",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 rows"
+    },
+    {
+      "name" : "lifecycle.no_activity_after_close",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 rows"
+    },
+    {
+      "name" : "date.rule_effective_range",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "137 rows"
+    },
+    {
+      "name" : "date.gt.series_start_before_end",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "9065 rows"
+    },
+    {
+      "name" : "date.budget_effective_matches_month",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "111124 rows"
+    },
+    {
+      "name" : "reconcile.account_opening_plus_txns_equals_closing",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "2346 accounts"
+    },
+    {
+      "name" : "reconcile.running_balance_chain",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 balance_after values"
+    },
+    {
+      "name" : "reconcile.transfer_groups_two_legs_net_zero",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "15033 transfer groups"
+    },
+    {
+      "name" : "reconcile.refund_not_greater_than_original",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "refund <= original purchase"
+    },
+    {
+      "name" : "date.refund_after_original",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "refund posted after purchase"
+    },
+    {
+      "name" : "reconcile.gt_monthly_actuals_match_labels",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "144943 user-month-category cells"
+    },
+    {
+      "name" : "reconcile.gt_series_occurrences_match_labels",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "9065 series"
+    },
+    {
+      "name" : "duplicate.transaction_natural_key",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "same account + timestamp + amount + descriptor"
+    },
+    {
+      "name" : "separation.ground_truth_not_in_input",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "input transactions.csv has no label columns (by construction of DatasetIO headers)"
+    },
+    {
+      "name" : "volume.user_profiles",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "1000 (expected 1000)"
+    },
+    {
+      "name" : "volume.transactions",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "500000 (expected 500000)"
+    },
+    {
+      "name" : "volume.twelve_months_covered",
+      "status" : "PASS",
+      "violations" : 0,
+      "detail" : "12 local months (2026-01-01 .. 2026-12-31)"
+    }
+  ]
+}

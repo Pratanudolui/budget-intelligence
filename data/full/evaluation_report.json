@@ -1,0 +1,329 @@
+{
+  "transactions_evaluated" : 500000,
+  "categorization" : {
+    "accuracy" : 0.9035,
+    "accuracy_excluding_transfers" : 0.8974,
+    "macro_f1" : 0.9479,
+    "coverage" : 0.9949,
+    "uncategorized" : 2543,
+    "top_confusions" : {
+      "GROC->SHOP" : 14010,
+      "GROC->HLTH" : 13480,
+      "SHOP->HLTH" : 8796,
+      "SHOP->GROC" : 5373,
+      "HLTH->GROC" : 1902,
+      "EDUC->SHOP" : 1896,
+      "GROC->UNCT" : 679,
+      "DINE->UNCT" : 520
+    },
+    "per_category" : {
+      "CASH" : {
+        "recall" : 1.0,
+        "support" : 9462,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "CCPY" : {
+        "recall" : 1.0,
+        "support" : 13708,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "DINE" : {
+        "recall" : 0.992,
+        "support" : 65087,
+        "precision" : 1.0,
+        "f1" : 0.996
+      },
+      "EDUC" : {
+        "recall" : 0.6675,
+        "support" : 5825,
+        "precision" : 1.0,
+        "f1" : 0.8006
+      },
+      "ENTR" : {
+        "recall" : 0.9919,
+        "support" : 21317,
+        "precision" : 1.0,
+        "f1" : 0.9959
+      },
+      "FEES" : {
+        "recall" : 1.0,
+        "support" : 4192,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "FUEL" : {
+        "recall" : 0.9918,
+        "support" : 22382,
+        "precision" : 1.0,
+        "f1" : 0.9959
+      },
+      "GIFT" : {
+        "recall" : 0.9937,
+        "support" : 8540,
+        "precision" : 1.0,
+        "f1" : 0.9968
+      },
+      "GROC" : {
+        "recall" : 0.6876,
+        "support" : 90195,
+        "precision" : 0.895,
+        "f1" : 0.7777
+      },
+      "HLTH" : {
+        "recall" : 0.8815,
+        "support" : 18949,
+        "precision" : 0.4285,
+        "f1" : 0.5767
+      },
+      "INSU" : {
+        "recall" : 1.0,
+        "support" : 5727,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "INTR" : {
+        "recall" : 1.0,
+        "support" : 8240,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "MORT" : {
+        "recall" : 1.0,
+        "support" : 2214,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "PEER" : {
+        "recall" : 1.0,
+        "support" : 13360,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "RENT" : {
+        "recall" : 1.0,
+        "support" : 9362,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "SALR" : {
+        "recall" : 1.0,
+        "support" : 19734,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "SHOP" : {
+        "recall" : 0.7303,
+        "support" : 54259,
+        "precision" : 0.7107,
+        "f1" : 0.7204
+      },
+      "SUBS" : {
+        "recall" : 1.0,
+        "support" : 25962,
+        "precision" : 0.9997,
+        "f1" : 0.9999
+      },
+      "TRNS" : {
+        "recall" : 0.9921,
+        "support" : 30021,
+        "precision" : 1.0,
+        "f1" : 0.9961
+      },
+      "TRVL" : {
+        "recall" : 0.9943,
+        "support" : 13440,
+        "precision" : 1.0,
+        "f1" : 0.9971
+      },
+      "UNCT" : {
+        "recall" : 0.0,
+        "support" : 0,
+        "precision" : 0.0,
+        "f1" : 0.0
+      },
+      "UTIL" : {
+        "recall" : 1.0,
+        "support" : 41666,
+        "precision" : 1.0,
+        "f1" : 1.0
+      },
+      "XFER" : {
+        "recall" : 1.0,
+        "support" : 16358,
+        "precision" : 1.0,
+        "f1" : 1.0
+      }
+    }
+  },
+  "transfers" : {
+    "tp" : 30066,
+    "fp" : 0,
+    "fn" : 0,
+    "precision" : 1.0,
+    "recall" : 1.0,
+    "f1" : 1.0
+  },
+  "refunds" : {
+    "tp" : 6678,
+    "fp" : 0,
+    "fn" : 0,
+    "precision" : 1.0,
+    "recall" : 1.0,
+    "f1" : 1.0,
+    "links" : 6674,
+    "links_pointing_to_true_original" : 6163
+  },
+  "recurring" : {
+    "series_truth" : 9065,
+    "series_detected" : 9070,
+    "series_detection" : {
+      "tp" : 9039,
+      "fp" : 31,
+      "fn" : 26,
+      "precision" : 0.9966,
+      "recall" : 0.9971,
+      "f1" : 0.9969
+    },
+    "cadence_accuracy_on_matched" : 0.9999,
+    "missed_occurrence_detection" : {
+      "tp" : 295,
+      "fp" : 52,
+      "fn" : 5,
+      "precision" : 0.8501,
+      "recall" : 0.9833,
+      "f1" : 0.9119
+    },
+    "shifted_postings_total" : 98,
+    "shifted_postings_wrongly_flagged_missed" : 0,
+    "naive_month_bucket_would_flag" : 98,
+    "price_change_detection" : {
+      "tp" : 223,
+      "fp" : 18,
+      "fn" : 9,
+      "precision" : 0.9253,
+      "recall" : 0.9612,
+      "f1" : 0.9429
+    }
+  },
+  "timezone" : {
+    "boundary_transactions" : 5739,
+    "engine_correct_budget_month" : 5739,
+    "naive_utc_correct_budget_month" : 0,
+    "engine_accuracy" : 1.0
+  },
+  "budget_taxonomy" : {
+    "budget_rows" : 111124,
+    "resolution_counts" : {
+      "ALIAS" : 1869,
+      "EXACT" : 108676,
+      "NORMALIZED" : 226,
+      "UNMAPPED" : 353
+    },
+    "mismatch_rows" : 2448,
+    "mismatch_handled_correctly" : 2448,
+    "mapped_via_alias_or_normalization" : 2095,
+    "flagged_unmapped" : 353,
+    "accuracy" : 1.0
+  },
+  "monthly_actuals" : {
+    "cells_in_truth" : 144943,
+    "engine" : {
+      "cells_compared" : 146954,
+      "mae_dollars" : 37.6655,
+      "cells_within_1_dollar_pct" : 77.0561
+    },
+    "naive_baseline" : {
+      "cells_compared" : 164383,
+      "mae_dollars" : 127.7461,
+      "cells_within_1_dollar_pct" : 64.4179
+    },
+    "total_spend_truth" : 5.22118484E7,
+    "total_spend_engine" : 5.202179458E7,
+    "total_spend_naive" : 6.727568361E7,
+    "naive_overstatement_pct" : 28.8514
+  },
+  "insights" : {
+    "OVER_BUDGET" : {
+      "tp" : 37114,
+      "fp" : 4443,
+      "fn" : 3971,
+      "precision" : 0.8931,
+      "recall" : 0.9033,
+      "f1" : 0.8982,
+      "expected" : 41085,
+      "produced" : 41557
+    },
+    "NEAR_BUDGET" : {
+      "tp" : 20934,
+      "fp" : 1402,
+      "fn" : 1760,
+      "precision" : 0.9372,
+      "recall" : 0.9224,
+      "f1" : 0.9298,
+      "expected" : 22694,
+      "produced" : 22336
+    },
+    "MISSED_RECURRING" : {
+      "tp" : 289,
+      "fp" : 48,
+      "fn" : 5,
+      "precision" : 0.8576,
+      "recall" : 0.983,
+      "f1" : 0.916,
+      "expected" : 294,
+      "produced" : 337
+    },
+    "RECURRING_PRICE_CHANGE" : {
+      "tp" : 223,
+      "fp" : 18,
+      "fn" : 9,
+      "precision" : 0.9253,
+      "recall" : 0.9612,
+      "f1" : 0.9429,
+      "expected" : 232,
+      "produced" : 241
+    },
+    "SPENDING_SPIKE_produced" : 8880
+  },
+  "edge_cases" : {
+    "RECURRING_FALSE_SKIP" : {
+      "rate" : 1.0,
+      "labelled" : 98,
+      "handled" : 98
+    },
+    "REFUND_AS_NEW_EXPENSE" : {
+      "rate" : 0.9206,
+      "labelled" : 1737,
+      "handled" : 1599
+    },
+    "TIMEZONE_BOUNDARY" : {
+      "rate" : 1.0,
+      "labelled" : 5739,
+      "handled" : 5739
+    },
+    "TRANSFER_DOUBLE_COUNT" : {
+      "rate" : 1.0,
+      "labelled" : 16164,
+      "handled" : 16164
+    },
+    "RECURRING_TRUE_SKIP" : {
+      "rate" : 0.9833,
+      "labelled" : 300,
+      "handled" : 295
+    },
+    "BUDGET_TAXONOMY_MISMATCH" : {
+      "rate" : 1.0,
+      "labelled" : 2448,
+      "handled" : 2448
+    }
+  },
+  "exceptions_by_type" : {
+    "BUDGET_CATEGORY_UNMAPPED" : 31,
+    "MISSED_RECURRING_PAYMENT" : 353,
+    "REFUND_WITHOUT_ORIGINAL" : 4,
+    "UNCATEGORIZED_TRANSACTION" : 2543
+  },
+  "runtime_seconds" : 3.546
+}

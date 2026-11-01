@@ -1,0 +1,88 @@
+{
+  "generator" : "com.yottaflex.budget.generator.SyntheticDataGenerator",
+  "generator_version" : "1.0.0",
+  "command" : "java -jar target/budget-intelligence.jar generate --scale starter --seed 20261022",
+  "seed" : 20261022,
+  "scale" : "starter",
+  "users" : 100,
+  "transactions" : 50000,
+  "year" : 2026,
+  "data_provenance" : "100% synthetic. No external datasets used; merchant and person names are invented.",
+  "files" : [
+    {
+      "path" : "input/accounts.csv",
+      "rows" : 236,
+      "sha256" : "131cb720cfc3e430b25141f4d931995194243d7bf217af919a54fdc59e43d882"
+    },
+    {
+      "path" : "input/budgets.csv",
+      "rows" : 11023,
+      "sha256" : "313849cdb8da5cdac76d00df1939ab7410624821a46ebec5755a3145a9087436"
+    },
+    {
+      "path" : "input/categories.csv",
+      "rows" : 31,
+      "sha256" : "93a6a6dd3b74ace942f74928004490996ca9e77f0aed9080e1e2598178ed61f5"
+    },
+    {
+      "path" : "input/category_aliases.csv",
+      "rows" : 10,
+      "sha256" : "a61353a4d97ffb65098e717bb42f7124d9737e29cb901d2b1ddea271fa683e9c"
+    },
+    {
+      "path" : "input/category_rules.csv",
+      "rows" : 137,
+      "sha256" : "1e32b4001d95b21cfa49296d9c84f58a9becaf03f4005bc28589cd50b939c576"
+    },
+    {
+      "path" : "input/merchant_categories.csv",
+      "rows" : 103,
+      "sha256" : "dbf75633f47385b1524216485fc3691957d8424759c65b51f3af17e44650d667"
+    },
+    {
+      "path" : "input/merchants.csv",
+      "rows" : 94,
+      "sha256" : "b7aea56c8c3cc8b27634c268dffa63d1a301dc4a114e95641e879ae85d420399"
+    },
+    {
+      "path" : "input/taxonomy.json",
+      "rows" : null,
+      "sha256" : "c6422b50068cb5a57f8f4ed69578b3b86d1804eddd0a7aae839135df02c72b6b"
+    },
+    {
+      "path" : "input/transactions.csv",
+      "rows" : 50000,
+      "sha256" : "745df0cf783386826b596146a1af81b20d49c50e06c0028e7d32dc46ed4fb92d"
+    },
+    {
+      "path" : "input/user_profiles.csv",
+      "rows" : 100,
+      "sha256" : "8aa617cfae52e8ebc5389deaa74a06de51efc8e53e893e4bb6c041045ac78d8c"
+    },
+    {
+      "path" : "ground_truth/budget_labels.csv",
+      "rows" : 11023,
+      "sha256" : "1845964676cd6fc6a13c744a932b249fd0af5b4f10f0d34a417bc90a20a389b3"
+    },
+    {
+      "path" : "ground_truth/insights.csv",
+      "rows" : 6410,
+      "sha256" : "5f05b8be060624e37b7c22932bfe3a7fedcaa81dd5ae4dffed507d2e8a2c9d4f"
+    },
+    {
+      "path" : "ground_truth/monthly_actuals.csv",
+      "rows" : 14486,
+      "sha256" : "2450b7f44f801db98e78f03fdb48bef5d52feb8526c28a99c8041756116a52e9"
+    },
+    {
+      "path" : "ground_truth/recurring_series.csv",
+      "rows" : 916,
+      "sha256" : "8e170efe6ecffe317a0c1556ef19d8b0bc5148b99b79e06be96f7816eb232f1a"
+    },
+    {
+      "path" : "ground_truth/transaction_labels.csv",
+      "rows" : 50000,
+      "sha256" : "4bd7d68660679c5bca99ec18c803199540df88573afe88c5f59611c33c7267e7"
+    }
+  ]
+}
