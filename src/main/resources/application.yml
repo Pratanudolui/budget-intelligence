@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: budget-intelligence
+  datasource:
+    # Local development defaults; override with DB_URL / DB_USERNAME / DB_PASSWORD environment variables.
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/budget_intel}
+    username: ${DB_USERNAME:budget_app}
+    password: ${DB_PASSWORD:budget_app}
+    hikari:
+      maximum-pool-size: 5
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none   # schema is owned by Flyway (src/main/resources/db/migration)
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: always
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    com.yottaflex.budget: INFO
